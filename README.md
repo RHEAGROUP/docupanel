@@ -16,12 +16,12 @@ To add DocuPanel to you project simply add this code block inside your view
   UpdateIndexation="{Binding DataContext.UpdateIndexation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ElementName=MWindow}"/>
 ```
 
-**PathDocumentationIndex** A `string` which corresponds to the path of the index file of your documentation. This file must be a `.json` file and be present at the root of the documentation.
+**PathDocumentationIndex** `string` which corresponds to the path of the index file of your documentation. This file must be a `.json` file and be present at the root of the documentation.
 
-**RootAppData** A `string` which corresponds to the path of the application data folder of your application.  
+**RootAppData** `string` which corresponds to the path of the application data folder of your application.  
 DocuPanel will create on this path a directory called `DocuPanel` to store its datas.  
 
-**UpdateIndexation** A `bool` which indicates whether the indexation needs to be updated.  
+**UpdateIndexation** `bool` which indicates whether the indexation needs to be updated.  
 If true, DocuPanel will browse all the files present in the index, and will convert them into HTML if they don't already exist. Note that if you want to update the content of a file, you have to delete the html file from the application data folder. The indexation for the searches will also be updated with the new documentation content.
 
 ### Structure of your documentation ###
@@ -76,7 +76,7 @@ The structure of the previous code gives
 ![Image](https://github.com/RHEAGROUP/docupanel/blob/master/hierarchy.PNG)
 
 **Title** is the title of you documentation.  
-**Author** if the author of the documentation. Can be empty.  
+**Author** is the author of the documentation. Can be empty.  
 **PagePath** is the path of the page. Note that a section does not necessary contains PagePath. For example a section can contains only children pages, it's what happens with *Installation* and *Configuration* in our example.    
 **Sections** is the list of the subsections.   
 **Name** is the name displayed by DocuPanel. It is possible to have two sections with the same name.
