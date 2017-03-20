@@ -77,7 +77,7 @@ The structure of the previous code gives
 
 **Title** is the title of you documentation.  
 **Author** is the author of the documentation. Can be empty.  
-**PagePath** is the path of the page. Note that a section does not necessary contains PagePath. For example a section can contains only children pages, it's what happens with *Installation* and *Configuration* in our example.    
+**PagePath** is the path of the page. Note that a section does not necessary contains PagePath. For example a section can contain only children pages, it's what happens with *Installation* and *Configuration* in our example.    
 **Sections** is the list of the subsections.   
 **Name** is the name displayed by DocuPanel. It is possible to have two sections with the same name.
 
