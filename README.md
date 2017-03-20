@@ -82,7 +82,7 @@ The structure of the previous code gives
 **Name** is the name displayed by DocuPanel. It is possible to have two sections with the same name.
 
 ### Sample ###
-You can see a sample which implements DocuPanel in the directory [DocuPanelSupport](https://github.com/RHEAGROUP/docupanel/DocuPanelSupport).
+You can see a sample which implements DocuPanel in the directory [DocuPanelSupport](https://github.com/RHEAGROUP/docupanel/tree/master/DocuPanelSupport).
 
 ## How can I Contribute ##
 If you have any idea to improve the DocuPanel your help is welcomed.  
