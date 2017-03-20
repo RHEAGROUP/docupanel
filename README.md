@@ -1,4 +1,6 @@
 # DocuPanel #
+[![NuGet Stats](https://img.shields.io/badge/nuget-v0.3.0-blue.svg)](https://www.nuget.org/packages/DocuPanel/)
+
 A WPF markdown/html Documentation Control with search that can be used to create a help facility in WPF x64 applications. The help pages are written using markdown and the structure of the help file is created using a json document.
 
 ## Installation ##
@@ -6,6 +8,7 @@ A WPF markdown/html Documentation Control with search that can be used to create
 NuGet available at https://www.nuget.org/packages/DocuPanel/
 
 ## Usage ##
+To have a better understanding of DocuPanel we recommend you to read [our documentation](https://rheagroup.gitbooks.io/docupanel/).
 
 ### Quick Start ###
 To add DocuPanel to you project simply add this code block inside your view
