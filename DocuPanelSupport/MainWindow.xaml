@@ -1,0 +1,19 @@
+﻿<Window x:Class="DocuPanelSupport.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DocuPanelSupport"
+        xmlns:docuPanel="clr-namespace:DocuPanel;assembly=DocuPanel"
+        mc:Ignorable="d"
+        x:Name="MWindow"
+        Title="MainWindow" Height="500" Width="825" WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:MainWindowViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <docuPanel:DocumentationView PathDocumentationIndex="{Binding DataContext.PathDocumentationIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ElementName=MWindow}"
+                                     RootAppData="{Binding DataContext.AppDataRoot, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ElementName=MWindow}"
+                                     UpdateIndexation="{Binding DataContext.UpdateIndexation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ElementName=MWindow}"/>
+    </Grid>
+</Window>

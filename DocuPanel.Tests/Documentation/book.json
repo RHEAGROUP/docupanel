@@ -1,0 +1,38 @@
+{
+  "Title": "Documentation",
+  "Author": "RHEA System S.A.",
+  "PagePath": "index.md",
+  "Sections": [
+    {
+      "Name": "Introduction",
+      "PagePath": "1_intro_Introduction.md"
+    },
+    {
+      "Name": "Quick Start",
+      "Sections": [],
+      "PagePath": "2_quickstart_Quick_Start.md"
+    },
+    {
+      "Name": "Installation",
+      "Sections": [
+        {
+          "Name": "Introduction",
+          "PagePath": "Installation\\1_installintro_Introduction.md"
+        },
+        {
+          "Name": "Configuration",
+          "Sections": [
+            {
+              "Name": "Step by Step",
+              "PagePath": "Installation\\2_installstep_Step_by_Step.md"
+            },
+            {
+              "Name": "User Properties",
+              "PagePath": "3_prop_User_Properties.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
