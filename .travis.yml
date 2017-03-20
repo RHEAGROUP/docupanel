@@ -1,7 +1,6 @@
 language: csharp
 solution: DocuPanel.sln
 install:
-  - nuget config -configfile NuGet.config
   - nuget restore DocuPanel.sln
   - nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
 script:
