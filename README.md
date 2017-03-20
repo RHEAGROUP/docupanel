@@ -3,7 +3,7 @@ A WPF markdown/html Documentation Control with search that can be used to create
 
 ## Installation ##
 
-Use `NuGet.org`
+NuGet available at https://www.nuget.org/packages/DocuPanel/
 
 ## Usage ##
 
