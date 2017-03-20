@@ -1,8 +1,9 @@
 language: csharp
 solution: DocuPanel.sln
 install:
+  - nuget config -configfile NuGet.config
   - nuget restore DocuPanel.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
+  - nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
 script:
-- xbuild /p:Configuration=Release ReqIFSharp.sln
-- mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./ReqIFSharp.Tests/bin/Release/ReqIFSharp.Tests.dll
+- xbuild /p:Configuration=Release DocuPanel.sln
+- mono ./testrunner/NUnit.Runners.3.6.1/tools/nunit-console.exe ./DocuPanel.Tests/bin/Release/DocuPanel.Tests.dll
