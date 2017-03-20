@@ -38,8 +38,6 @@ The `index` must be `.json` file and should have the properties
 | Build Action | Copy to Outpout Directory |
 |:-------------|:--------------------------|
 | None         | Copy always               |
-|
-
 
 It has to be structured as the following example
 ``` json
@@ -75,13 +73,13 @@ It has to be structured as the following example
 ```
 The structure of the previous code gives
 
-![Image](hierarchy.png)
+![Image](https://github.com/RHEAGROUP/docupanel/blob/master/hierarchy.PNG)
 
-** Title ** is the title of you documentation.  
-** Author ** if the author of the documentation. Can be empty.  
-** PagePath ** is the path of the page. Note that a section does not necessary contains PagePath. For example a section can contains only children pages, it's what happens with *Installation* and *Configuration* in our example.    
-** Sections ** is the list of the subsections.   
-** Name ** is the name displayed by DocuPanel. It is possible to have two sections with the same name.
+**Title** is the title of you documentation.  
+**Author** if the author of the documentation. Can be empty.  
+**PagePath** is the path of the page. Note that a section does not necessary contains PagePath. For example a section can contains only children pages, it's what happens with *Installation* and *Configuration* in our example.    
+**Sections** is the list of the subsections.   
+**Name** is the name displayed by DocuPanel. It is possible to have two sections with the same name.
 
 ### Sample ###
 You can see a sample which implements DocuPanel in the directory [DocuPanelSupport](https://github.com/RHEAGROUP/docupanel/DocuPanelSupport).
