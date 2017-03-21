@@ -34,7 +34,7 @@ Your documentation files should be present inside your project directory and can
 
 | Build Action | Copy to Outpout Directory |
 |:-------------|:--------------------------|
-| content      | Copy if newer             |
+| None         | Copy if newer             |
 
 The `index` must be `.json` file and should have the properties
 
