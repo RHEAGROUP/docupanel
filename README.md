@@ -11,12 +11,12 @@ NuGet available at https://www.nuget.org/packages/DocuPanel/
 To have a better understanding of DocuPanel we recommend you to read [our documentation](https://rheagroup.gitbooks.io/docupanel/).
 
 ### Quick Start ###
-To add DocuPanel to you project simply add this code block inside your view
+To add DocuPanel to you project simply add this code block with your own values inside your view
 ``` xaml
 <docuPanel:DocumentationView
-  PathDocumentationIndex="{Binding DataContext.PathDocumentationIndex, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ElementName=MWindow}"
-  RootAppData="{Binding DataContext.AppDataRoot, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ElementName=MWindow}"
-  UpdateIndexation="{Binding DataContext.UpdateIndexation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ElementName=MWindow}"/>
+            PathDocumentationIndex="C:\Projects\DocuPanel\DocuPanelSupport\bin\x64\Debug\Documentation\book.json"
+            RootAppData="Users\<userName>\AppData\Local\<YourAppDataFolder>"
+            UpdateIndexation="true"/>
 ```
 
 **PathDocumentationIndex** `string` which corresponds to the path of the index file of your documentation. This file must be a `.json` file and be present at the root of the documentation.
@@ -25,7 +25,7 @@ To add DocuPanel to you project simply add this code block inside your view
 DocuPanel will create on this path a directory called `DocuPanel` to store its datas.  
 
 **UpdateIndexation** `bool` which indicates whether the indexation needs to be updated.  
-If true, DocuPanel will browse all the files present in the index, and will convert them into HTML if they don't already exist. The indexation for the searches will also be updated with the new documentation content. Note that if you want to update the content of a file, you have to delete the html file from the application data folder. This property needs to be `true` the first time you use DocuPanel. 
+If true, DocuPanel will browse all the files indicated in the index, and will convert them into HTML if they don't already exist. DocuPanel converts your Markdown files into HTML files to be displayed by CefSharp. The indexation for the searches will also be updated with the new documentation content. Note that if you want to update the content of a file, to consider the changes you have to delete the HTML file from the application data folder. This property needs to be `true` the first time you use DocuPanel and each time you make changes in your documentation.
 
 ### Structure of your documentation ###
 Your documentation files should be present inside your project directory and can be ordered the way you want. However they must have different names.
@@ -74,7 +74,7 @@ The structure of the previous code gives
 
 ![Image](https://github.com/RHEAGROUP/docupanel/blob/master/hierarchy.PNG)
 
-**Title** is the title of you documentation.  
+**Title** is the title of your documentation.  
 **Author** is the author of the documentation. Can be empty.  
 **PagePath** is the path of the page. Note that a section does not necessary contains PagePath. For example a section can contain only children pages, it's what happens with *Installation* and *Configuration* in our example.    
 **Sections** is the list of the subsections.   
