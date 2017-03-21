@@ -25,7 +25,7 @@ To add DocuPanel to you project simply add this code block inside your view
 DocuPanel will create on this path a directory called `DocuPanel` to store its datas.  
 
 **UpdateIndexation** `bool` which indicates whether the indexation needs to be updated.  
-If true, DocuPanel will browse all the files present in the index, and will convert them into HTML if they don't already exist. The indexation for the searches will also be updated with the new documentation content. Note that if you want to update the content of a file, you have to delete the html file from the application data folder. 
+If true, DocuPanel will browse all the files present in the index, and will convert them into HTML if they don't already exist. The indexation for the searches will also be updated with the new documentation content. Note that if you want to update the content of a file, you have to delete the html file from the application data folder. This property needs to be `true` the first time you use DocuPanel. 
 
 ### Structure of your documentation ###
 Your documentation files should be present inside your project directory and can be ordered the way you want. However they must have different names.
