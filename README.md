@@ -36,11 +36,7 @@ Your documentation files should be present inside your project directory and can
 |:-------------|:--------------------------|
 | None         | Copy if newer             |
 
-The `index` must be `.json` file and should have the properties
-
-| Build Action | Copy to Outpout Directory |
-|:-------------|:--------------------------|
-| None         | Copy always               |
+The `index` must be `.json` file and should have the same properties.
 
 It has to be structured as the following example
 ``` json
