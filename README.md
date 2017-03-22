@@ -11,7 +11,9 @@ NuGet available at https://www.nuget.org/packages/DocuPanel/
 To have a better understanding of DocuPanel we recommend you to read [our documentation](https://rheagroup.gitbooks.io/docupanel/).
 
 ### Quick Start ###
-To add DocuPanel to you project simply add this code block with your own values inside your view
+To add DocuPanel to you project you can read this [tutorial](https://www.codeproject.com/Articles/1177702/Display-your-Markdown-documentation-using-DocuPane) or read the following instructions.
+
+First add this code block with your own values inside your view
 ``` xaml
 <docuPanel:DocumentationView
             PathDocumentationIndex="C:\Projects\DocuPanel\DocuPanelSupport\bin\x64\Debug\Documentation\book.json"
